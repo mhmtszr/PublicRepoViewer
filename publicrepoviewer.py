@@ -14,8 +14,8 @@ def printAllRepo(x):
 githubprofilename = input("Enter github profile name: ")
 
 url = "https://github.com/"+githubprofilename+"?tab=repositories"
-nextControl = False
-while(nextControl == False):
+
+while(True):
 	response = requests.get(url)
 
 	html_icerigi = response.content
