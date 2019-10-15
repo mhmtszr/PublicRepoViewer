@@ -18,9 +18,9 @@ url = "https://github.com/"+githubprofilename+"?tab=repositories"
 while(True):
 	response = requests.get(url)
 
-	html_icerigi = response.content
+	html_content = response.content
 
-	soup = BeautifulSoup(html_icerigi,"html.parser")
+	soup = BeautifulSoup(html_content,"html.parser")
 
 	x = soup.find_all("a")
 	
